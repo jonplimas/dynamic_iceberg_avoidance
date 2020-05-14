@@ -61,7 +61,7 @@ namespace ices {
           candidate.add_step(direction);
           valid_step = true;
         } else {
-          valid = false;
+          valid_step = false;
           break;
         }
       }
