@@ -48,7 +48,7 @@ namespace ices {
       for(unsigned int k = 0; k <= steps-1; k++) {
         // bit to be parsed from the current bit-string path
         auto bit = (bits>>k) & 1;
-        
+
         // bit determines the direction of the step
         if(bit == 1) {
           direction = STEP_DIRECTION_RIGHT;
@@ -83,11 +83,9 @@ namespace ices {
     assert(setting.rows() > 0);
     assert(setting.columns() > 0);
 
-
     const int DIM=100;
     std::vector<std::vector<unsigned>> A(DIM, std::vector<unsigned>(DIM));
-
-    A[0][0] = 1;
+    A[0][0] = 1; 
 
     unsigned int none = 0;
     unsigned int myAbove;
@@ -119,7 +117,7 @@ namespace ices {
             if(j > 0 && A[i][j-1] != none) {
               myLeft = A[i][j-1];
             }
-            
+
             A[i][j] = (myAbove + myLeft);
 
             if(myAbove == none && myLeft == none) {

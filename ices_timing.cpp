@@ -12,7 +12,6 @@
 #include <iostream>
 
 #include "timer.hpp"
-
 #include "ices_algs.hpp"
 
 void print_bar() {

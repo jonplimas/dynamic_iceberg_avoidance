@@ -103,12 +103,12 @@ public:
     }
   }
 
-  // Create a random grid with the given number of rows, columns, 
-  // passable cells, thicket cells, and random number generator. 
-  // rows and columns must both be positive. The number of thicket cells 
+  // Create a random grid with the given number of rows, columns,
+  // passable cells, thicket cells, and random number generator.
+  // rows and columns must both be positive. The number of thicket cells
   // must be less than the number of total cells in the grid.
   template <typename URNG>
-  static grid random(coordinate rows, coordinate columns, 
+  static grid random(coordinate rows, coordinate columns,
 		     unsigned thicket_count, URNG&& gen) {
 
     assert(rows > 0);
@@ -202,7 +202,7 @@ public:
   }
 };
 
-  
+
 // A path represents a sequence of valid steps in a particular grid.
 //
 // The first step must always be STEP_DIRECTION_START, and subsequent steps
@@ -211,8 +211,8 @@ public:
 // This class can only represent a valid path, so steps that would move off
 // the grid, or step on a thicket cell, are prohibited with assertions.
 //
-// This class tracks the ending position, and the total number of the paths, 
-// in order to make it easier to compare candidate solutions in the 
+// This class tracks the ending position, and the total number of the paths,
+// in order to make it easier to compare candidate solutions in the
 // exhaustive optimization algorithm.
 class path {
 private:
@@ -230,7 +230,6 @@ private:
   }
 
 public:
-
   // Create an empty path, containing only one STEP_DIRECTION_START step
   // and no other steps.
   path(const grid& setting) { initialize(setting); }
@@ -293,5 +292,5 @@ public:
   }
 
 };
- 
+
 }
