@@ -1,11 +1,9 @@
 
 ICEBERG AVOIDANCE
-description - comparison of time complexities between Exhaustive Optimization and Dynamic Programming algorithms
-
-Jon Limas  jonplimas@csu.fullerton.edu
+description: comparison of time complexities between Exhaustive Optimization and Dynamic Programming algorithms
 
 
-Compile and Run using C++17:
+note: Compile and Run using C++17
 
 g++ -std=c++17 -o test ices_test.cpp
 ./test
