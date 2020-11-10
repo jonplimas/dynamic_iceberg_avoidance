@@ -17,3 +17,7 @@ g++ -std=c++17 -o test ices_test.cpp
 TIMER FOR COMPARISON OF ALGORITHMS
 g++ -std=c++17 -o timing ices_timing.cpp
 ./timing
+
+
+
+SEE Project 4 Report pdf for in-depth Analysis
