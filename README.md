@@ -1,5 +1,6 @@
-# Project-4
-Iceberg avoiding problem
+
+ICEBERG AVOIDANCE
+description - comparison of time complexities between Exhaustive Optimization and Dynamic Programming algorithms
 
 Jon Limas  jonplimas@csu.fullerton.edu
 

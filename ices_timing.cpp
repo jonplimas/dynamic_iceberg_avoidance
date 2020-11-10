@@ -46,7 +46,7 @@ int main() {
   input.print();
 
   print_bar();
-  std::cout << "exhaustive optimization" << std::endl;
+  std::cout << "EXHAUSTIVE OPTIMIZATION" << std::endl;
   if (n > EXHAUSTIVE_OPTIM_MAX_N) {
     std::cout << std::endl << "(n too large, skipping exhaustive optimization)" << std::endl;
   } else {
@@ -54,16 +54,16 @@ int main() {
     auto exhaustive_output = iceberg_avoiding_exhaustive(input);
     elapsed = timer.elapsed();
     std::cout << "Exhaustive: " << exhaustive_output << std::endl;
-    std::cout << std::endl << "elapsed time=" << elapsed << " seconds" << std::endl;
+    std::cout << std::endl << "elapsed time = " << elapsed << " seconds" << std::endl;
   }
 
   print_bar();
-  std::cout << "dynamic programming" << std::endl;
+  std::cout << "DYNAMIC PROGRAMMING" << std::endl;
   timer.reset();
   auto dyn_prog_output = iceberg_avoiding_dyn_prog(input);
   elapsed = timer.elapsed();
-  std::cout << "Dynamic programming" << dyn_prog_output << std::endl;
-  std::cout << std::endl << "elapsed time=" << elapsed << " seconds" << std::endl;
+  std::cout << "Dynamic programming: " << dyn_prog_output << std::endl;
+  std::cout << std::endl << "elapsed time = " << elapsed << " seconds" << std::endl;
 
   print_bar();
 
